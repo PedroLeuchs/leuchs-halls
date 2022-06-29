@@ -7,6 +7,9 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
+button{
+  margin: 10px;
+}
 
 
 /* CUSTOMIZA O CAROUSEL
@@ -25,16 +28,21 @@ body {
 
 /* Declaramos alturas, devido ao posicionamento do elemento img */
 .carousel-item {
-  height: 32rem;
   background-color: #777;
+  width: 100vw;
+  height: 100vh;
 }
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+.carousel-item#first-slide {
+  background-image: url('../img/halls1.png');
+  background-repeat: repeat-x repeat-y;
 }
+
+.carousel-item#second-slide {
+  background-image: url('../img/halls2.png');
+  background-repeat: repeat-x repeat-y;
+}
+
+
 
 
 /* CONTEÚDO DO MARKETING
@@ -67,57 +75,86 @@ body {
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
-
-/* CSS RESPONSIVE
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Aumenta o tamanho do conteúdo do carousel */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
 .atras{
 
   background-color: rgba(255,255 ,255);
 
-}
-.first-slide{
-width: 100%;
-height: 100%;
 
-  background-image: url(../img/halls1.png);
-  background-repeat: repeat-x repeat-y;
-}
-.second-slide{
-  width: 100%;
-height: 100%;
-
-  background-image: url(../img/halls2.png);
-  background-repeat: repeat-x repeat-y;
-
-}
-.third-slide{
-  width: 50rem;
-  height: 50rem;
-  margin: none;
-  border: none;
-    background-image: url(../img/halls4.png);
-    background-repeat: no-repeat;
 }
 .myCarousel{
   margin-top: 0px;
 }
+
+@media( min-width: 620px){
+
+    .carousel-item#third-slide img{
+      width: 50rem;
+      height: 50rem;
+    }
+  
+  
+
+}
+/* CSS RESPONSIVE
+-------------------------------------------------- */
+
+@media (max-width: 620px) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+  .carousel-item#first-slide {
+    background-size: 100px;
+  }
+
+  .carousel-item#second-slide {
+    background-size: 10rem;
+  }
+
+  .carousel-item#third-slide img{
+    width: 100px;
+    height: 100px;
+  }
+}
+
+    
+    @media (max-width: 400px ) {
+      /* Aumenta o tamanho do conteúdo do carousel */
+      .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+      
+      .featurette-heading {
+        font-size: 50px;
+      }
+        .second-slide{
+          width: 10rem;
+        height: 10rem;
+        
+          background-image: url(../img/halls2.png);
+          background-repeat: repeat-x repeat-y;
+        
+        }
+        .carousel-item#third-slide img{
+          width: 100px;
+          height: 100px;
+        }
+    
+        .carousel-caption h1,p{
+          background-color: rgba(29, 27, 27, 0.942);
+          margin: 1px;
+          padding: 1px;
+          border: 1px;
+          border-radius: 10px;
+          text-align: center;
+        }
+        body{
+          padding: 0px;
+        }
+        .carousel-inner{
+          height: 500px;
+
+        }
+    }
+    
