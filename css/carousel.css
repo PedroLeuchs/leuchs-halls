@@ -1,7 +1,9 @@
 /* ESTILOS GLOBAIS
 -------------------------------------------------- */
 /* Padding abaixo do footer e texto mais suave no <body> */
-
+*{
+overflow: hidden;
+}
 body {
   
   color: #5a5a5a;
