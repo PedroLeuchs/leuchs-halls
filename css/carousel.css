@@ -41,6 +41,7 @@ body {
 .carousel-item#third-slide {
   background-image: url('../img/halls4.png');
   background-repeat: repeat-x repeat-y;
+  margin: 20px;
 }
 
 
@@ -88,12 +89,7 @@ body {
 
 @media( min-width: 620px){
 
-    .carousel-item#third-slide img{
-      justify-content: center;
-      align-items: center;
-      width: 500px;
-      height: 500px;
-    }
+    
   
   
 
@@ -110,12 +106,11 @@ body {
   }
 
   .carousel-item#second-slide {
-    background-size: 10rem;
+    background-size: 100px;
   }
 
   .carousel-item#third-slide img{
-    width: 100px;
-    height: 100px;
+    background-size: 100px;
   }
 }
 
@@ -157,6 +152,4 @@ body {
 
         }
        
-        
-
-        
+       
