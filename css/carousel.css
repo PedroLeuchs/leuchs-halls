@@ -116,14 +116,20 @@ body {
 
     
     @media (max-width: 400px ) {
-    .carousel-item{
-
-      margin-left: 50% ;
-      width: auto ;
-      height: 100% ;
-      align-items: center;
-      justify-content: center;
-    }  
+      .featurette-heading {
+        margin-top: 3.5rem;
+      }
+      .carousel-item#first-slide {
+        background-size: 50px;
+      }
+    
+      .carousel-item#second-slide {
+        background-size: 50px;
+      }
+    
+      .carousel-item#third-slide img{
+        background-size: 50px;
+      }
     }
       
        h1,p{
@@ -152,4 +158,4 @@ body {
 
         }
        
-       
+   
