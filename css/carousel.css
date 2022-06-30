@@ -1,9 +1,7 @@
 /* ESTILOS GLOBAIS
 -------------------------------------------------- */
 /* Padding abaixo do footer e texto mais suave no <body> */
-*{
-overflow: hidden;
-}
+
 body {
   
   color: #5a5a5a;
@@ -118,8 +116,8 @@ body {
 }
 
     
-    @media (max-width: 400px ) {
-      /* Aumenta o tamanho do conteúdo do carousel */
+    /* @media (max-width: 400px ) {
+      
       .carousel-caption p {
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
@@ -147,7 +145,7 @@ body {
           height: 500px;
           
         }
-      }
+      } */
        h1,p{
         background-color: rgba(119, 119, 119, 0.63) ;
         backdrop-filter: blur(10px);
@@ -173,9 +171,7 @@ body {
           background:none;
 
         }
-        /* #modals{
-          margin-bottom: 5rem;
-        } */
+       
         
 
         
