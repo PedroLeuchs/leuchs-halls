@@ -7,9 +7,7 @@ body {
   padding-bottom: 3rem;
   color: #5a5a5a;
 }
-button{
-  margin: 10px;
-}
+
 
 
 /* CUSTOMIZA O CAROUSEL
@@ -88,8 +86,10 @@ button{
 @media( min-width: 620px){
 
     .carousel-item#third-slide img{
-      width: 50rem;
-      height: 50rem;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      height: 500px;
     }
   
   
@@ -141,20 +141,40 @@ button{
           height: 100px;
         }
     
-        .carousel-caption h1,p{
-          background-color: rgba(29, 27, 27, 0.942);
-          margin: 1px;
-          padding: 1px;
-          border: 1px;
-          border-radius: 10px;
-          text-align: center;
-        }
-        body{
-          padding: 0px;
-        }
+        
         .carousel-inner{
           height: 500px;
+          
+        }
+      }
+       h1,p{
+        background-color: rgba(119, 119, 119, 0.63) ;
+        backdrop-filter: blur(10px);
+        margin: 1px;
+        padding: 1px;
+        border: 1px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      body{
+          padding: 0px;
+          overflow: hidden;
+          background-color: rgb(119, 119, 119);
+       
+        }
+        button{
+          margin: 0px;
+        }
+        .btn,.btn-primary{
+          margin: 0px;
+        }
+        #modal h1,p{
+          background:none;
 
         }
-    }
-    
+        /* #modals{
+          margin-bottom: 5rem;
+        } */
+        
+
+        
