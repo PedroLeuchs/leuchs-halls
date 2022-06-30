@@ -41,7 +41,7 @@ body {
 .carousel-item#third-slide {
   background-image: url('../img/halls4.png');
   background-repeat: repeat-x repeat-y;
-  margin: 20px;
+  
 }
 
 
@@ -102,15 +102,15 @@ body {
     margin-top: 7rem;
   }
   .carousel-item#first-slide {
-    background-size: 100px;
+    background-size: 300px;
   }
 
   .carousel-item#second-slide {
-    background-size: 100px;
+    background-size: 300px;
   }
 
-  .carousel-item#third-slide img{
-    background-size: 100px;
+  .carousel-item#third-slide {
+    background-size: 300px;
   }
 }
 
@@ -120,20 +120,28 @@ body {
         margin-top: 3.5rem;
       }
       .carousel-item#first-slide {
-        background-size: 50px;
+        background-size: 200px;
       }
     
       .carousel-item#second-slide {
-        background-size: 50px;
+        background-size: 200px;
       }
     
-      .carousel-item#third-slide img{
-        background-size: 50px;
+      .carousel-item#third-slide {
+        background-size: 200px;
+      }
+      h1{
+        font-size: 36px;
+        color: black;
+      }
+      p{
+        font-size: 24px;
+        color: black;
       }
     }
       
        h1,p{
-        background-color: rgba(119, 119, 119, 0.63) ;
+        background-color: rgba(119, 119, 119, 0.696) ;
         backdrop-filter: blur(10px);
         margin: 1px;
         padding: 1px;
@@ -157,5 +165,11 @@ body {
           background:none;
 
         }
+        .carousel-item h1,p{
+          padding: 1rem;
+          border: solid black 1px;
+        }
        
-   
+        
+
+        
