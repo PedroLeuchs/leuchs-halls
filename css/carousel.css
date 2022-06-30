@@ -38,6 +38,10 @@ body {
   background-image: url('../img/halls2.png');
   background-repeat: repeat-x repeat-y;
 }
+.carousel-item#third-slide {
+  background-image: url('../img/halls4.png');
+  background-repeat: repeat-x repeat-y;
+}
 
 
 
@@ -116,36 +120,17 @@ body {
 }
 
     
-    /* @media (max-width: 400px ) {
+    @media (max-width: 400px ) {
+    .carousel-item{
+
+      margin-left: 50% ;
+      width: auto ;
+      height: 100% ;
+      align-items: center;
+      justify-content: center;
+    }  
+    }
       
-      .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-      }
-      
-      .featurette-heading {
-        font-size: 50px;
-      }
-        .second-slide{
-          width: 10rem;
-        height: 10rem;
-        
-          background-image: url(../img/halls2.png);
-          background-repeat: repeat-x repeat-y;
-        
-        }
-        .carousel-item#third-slide img{
-          width: 100px;
-          height: 100px;
-        }
-    
-        
-        .carousel-inner{
-          height: 500px;
-          
-        }
-      } */
        h1,p{
         background-color: rgba(119, 119, 119, 0.63) ;
         backdrop-filter: blur(10px);
